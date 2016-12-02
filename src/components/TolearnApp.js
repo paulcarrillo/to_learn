@@ -60,7 +60,7 @@ class TolearnApp extends React.Component {
     return (
       <div>
         <TolearnForm addTolearnItem={this.addTolearnItem} />
-        <List items={this.state.items} onTolearnClick={this.onTolearnClick} />
+        <List items={this.filteredItems()} onTolearnClick={this.onTolearnClick} />
         <Filter setFilter={this.setFilter} currentFilter={this.state.filter} />
       </div>
     )
